@@ -4,21 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css?v=<?= rand(1111, 999999); ?>">
     <title>Bài tập web</title>
 </head>
 
 <body>
     <div class="container">
-        <form id="form">
-            <div class="form-control">
-                <span for="#year">Nhập ngày sinh</span>
-                <input id="year" type="date" required>
-            </div>
+        <div>
+            <img src="/img/bg.jpg" alt="" width="190px" height="50">
+        </div>
 
-            <button type="submit">Tính cung hoàng đạo</button>
-            <span id="result"></span>
-        </form>
+        <h1>Best <span>Shared Hosting</span> Company</h1>
+        <p>With this responsive landing page template, you can promote your all hosting , domain and email services</p>
+        <button>View Plans</button>
+        <button>All feature</button>
     </div>
 
 
@@ -27,17 +26,7 @@
     <script>
         $(document).ready(function() {
 
-            $("#form").submit(function(e) {
-                e.preventDefault();
 
-                var tuoi = $("#year").val();
-                const date = new Date(tuoi);
-                console.log(date);
-
-                console.log(date.getFullYear()); // Year
-                console.log(date.getMonth()); // Month (0-11)
-                console.log(date.getDate());
-            })
 
         })
     </script>
