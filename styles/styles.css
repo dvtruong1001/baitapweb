@@ -5,30 +5,8 @@
 
 
 body {
-    background-color: beige;
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.header {
-    jusstify-content: space-between;
-    display: flex;
-    background-color: rgb(44, 34, 34);
-}
-
-
-.header li {
-    jusstify-content: space-between;
-    display: flex;
-    
-}
-
-
-.header li a {
-    color: white;
-    padding: 15px;
-    
-}
-
-
-.header li a:hover {
-    background-color: red;
-}
