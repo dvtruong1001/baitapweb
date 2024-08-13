@@ -5,27 +5,51 @@
 
 
 .container {
-
     text-align: center;
     padding: 30px;
-    
+}
+
+.form-control input {
+    padding: 15px;
+    width: 100%;
+}
+
+
+.form-control textarea {
+    padding: 15px;
+    width: 100%;
+}
+
+.form-control {
+    padding: 5px;
 
 }
 
-.list {
+.group.form-control {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
 }
 
-.logo {
-    height: 30px;
-    width: 30px;
-    background-color: rgb(224, 156, 30);
-    display: inline-block;
-    
+
+.group {
+    display: inline;
 }
 
-.title {
-    font-size: 2.5vh;
-    padding-bottom: 100px;
+.footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: normal;
+}
+
+button {
+    padding: 15px;
+    background-color: aqua;
+    border-style: none;
+    border-radius: 5px;
+}
+span {
+    padding: 15px;
+    border-style: none;
+    border-radius: 5px;
 }
