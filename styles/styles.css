@@ -52,20 +52,11 @@ form {
     margin: 10px;
 }
 
-.form-radio input[type=radio] {
+.form-control input[type=radio] {
     display: inline-block;
     padding: 10px;
     margin: 10px;
    
 }
-
-
-.form-radio label {
-    display: block;
-    padding: 10px;
-    margin: 10px;
-   
-}
-
 
 
