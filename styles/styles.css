@@ -4,6 +4,10 @@
 }
 
 
+.row::after {
+    display: inline-grid;
+}
+
 
 body {
     background-image: linear-gradient(to bottom, #109bec, #fff);
@@ -15,48 +19,110 @@ body {
 .container {
 
     padding: 30px;
+    display: flex;
+
 }
 
-h1 {
+header {
+    height: 50px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.left-sidebar {
+    float: left;
+}
+
+.left-sidebar ul li {
+    margin-bottom: 10px;
+
+    list-style-type: none;
+}
+
+.left-sidebar ul li a {
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: blue;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.right-sidebar {
+
+    float: right;
+    width: 20%;
+
+    padding: 0;
+
+
+}
+
+.right-sidebar ul {
+    background-color: blue;
+    width: 200px;
+
+}
+
+.right-sidebar ul li {
+    list-style-type: none;
+    width: 100%;
+}
+
+.right-sidebar ul li a {
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: white;
     text-align: center;
 }
+  
+@media only screen and (max-width: 400px) {
 
-form {
-    width: 100%;
-}
+    .right-sidebar {
 
-.form-control label {
-    padding: 10px;
-    display: block;
-    width: 100%;
+        float: none;
+        width: 20%;
+    
+        padding: 0;
+    
+    
+    }
     
 }
 
 
-.form-control input[type=text], input[type=number], input[type=email] {
-    padding: 10px;
-    border-radius: 5px;
-    border-style: none;
-    display: block;
-    width: 100%;
-    margin: 10px;
+@media only screen and (max-width: 600px) {
+
+    .right-sidebar {
+
+        display: inline-block;
+        float: bottom;
+        width: 100%;
+    
+        padding: 0;
+    
+    
+    }
+
+    
+    
 }
-
-
-.form-control select {
-    padding: 10px;
-    border-radius: 5px;
-    border-style: none;
-    display: block;
-    width: 100%;
-    margin: 10px;
-}
-
-.form-control input[type=radio] {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-   
-}
-
-
