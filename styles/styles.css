@@ -17,35 +17,55 @@ body {
     padding: 30px;
 }
 
-.feature {
-    margin: 30px;
-    padding: 30px;
-    background-color: rgb(255, 255, 255);
+h1 {
+    text-align: center;
 }
 
-.feature i {
-    color: green;
-    font-size: 1.5rem;
+form {
+    width: 100%;
 }
 
-.feature .name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-
-.feature .des {
-    font-size: 1.2rem;
+.form-control label {
+    padding: 10px;
+    display: block;
+    width: 100%;
     
-    padding-top: 10px;
-    padding-bottom: 20px;
-    color: rgba(139, 139, 139, 0.514);
 }
 
 
-.menu {
-    display: grid;
-    grid-template-columns: auto auto auto;
+.form-control input[type=text], input[type=number], input[type=email] {
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    display: block;
+    width: 100%;
+    margin: 10px;
 }
+
+
+.form-control select {
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    display: block;
+    width: 100%;
+    margin: 10px;
+}
+
+.form-radio input[type=radio] {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+   
+}
+
+
+.form-radio label {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+   
+}
+
+
+
